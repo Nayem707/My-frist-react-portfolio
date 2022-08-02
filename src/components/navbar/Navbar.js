@@ -1,58 +1,50 @@
-import React from "react";
-import { Outlet, Link } from "react-router-dom";
-import "./navbar.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
-const Navbar = () => {
+function NavbarHome() {
   return (
-    <section>
-      <div className="container-fluid">
-        <h1>Bootstrap Affix Example</h1>
-      </div>
-
-      <nav
-        className="navbar navbar-inverse"
-        data-spy="affix"
-        data-offset-top="199"
-      >
-        <div clasName="container-fluid">
-          <div className="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle"
-              data-toggle="collapse"
-              data-target="#myNavbar"
-            >
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-            <Link to="/">WebSiteName</Link>
-          </div>
-          <div>
-            <div className="collapse navbar-collapse" id="myNavbar"></div>
-          </div>
-        </div>
-      </nav>
-      {/* <ul className="nav navbar-nav">
-                <li className="nav-link">
-                  <Link to="/" className="nav-item">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-link">
-                  <Link to="/about" className="nav-item">
-                    About
-                  </Link>
-                </li>
-                <li className="nav-link">
-                  <Link to="/contact" className="nav-item">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-              <Outlet /> */}
-    </section>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
-export default Navbar;
+export default NavbarHome;
