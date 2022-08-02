@@ -1,17 +1,31 @@
-ul{
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
-    background-color: rgb(24, 164, 117);
+/* ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+  background-color: rgb(24, 164, 117);
 }
-li{
-    float: left;
+li {
+  float: left;
 }
-li .nav-item{
-    display: block;
-    color: rgb(253, 255, 254);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+li .nav-item {
+  display: block;
+  color: rgb(253, 255, 254);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 99 !important;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+  position: relative;
+  top: 50px;
 }
