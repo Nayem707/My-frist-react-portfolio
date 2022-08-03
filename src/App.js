@@ -10,6 +10,9 @@ import Error from "./components/err/Error";
 function App() {
   return (
     <BrowserRouter>
+      <p>
+        <strong>Phone:</strong> +8801777-941513
+      </p>
       <NavbarHome />
       <Routes>
         <Route path="/" element={<Home />} />

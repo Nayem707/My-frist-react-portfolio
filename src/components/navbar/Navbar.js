@@ -1,26 +1,35 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  Button,
+  Container,
+} from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
+import { Link, outline } from "react-router-dom";
 
 function NavbarHome() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">NAYEM ISLAM</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+            <Link to="/about" className="nav-link">
+              About
+            </Link>
+            <Link to="/contact" className="nav-link">
+              Contact
+            </Link>
+            <NavDropdown title="Projet" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">HTML</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">CSS</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">JS</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link
@@ -32,13 +41,13 @@ function NavbarHome() {
               <Form.Control
                 type="search"
                 placeholder="Search"
-                className="me-2"
+                className="me-0"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-info">Search</Button>
             </Form>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link href="https://github.com/Nayem707">
+              <FaGithub className="text-white"></FaGithub>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
