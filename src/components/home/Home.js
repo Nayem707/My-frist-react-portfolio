@@ -4,61 +4,42 @@ import "./home.css";
 const Home = () => {
   return (
     <>
-      <div className="flex-container">
-        <div className="flex-item-left">1</div>
-        <div className="flex-item-right">
-          <img
-            src="image/n.jpg"
-            alt="Italian Trulli"
-            className="image-header"
-          />
+      <div className="container-fluid text-center">
+        <div className="row">
+          <div className="col-lg-6 bg-light">
+            <div className="m-5">
+              <h1>Hi I am Nayem Islam</h1>
+              <h3>Web Designer</h3>
+              <p>
+                lorem ipesom doller lorem ipesom doller lorem ipesom doller
+                lorem ipesom doller lorem ipesom doller lorem ipesom doller
+              </p>
+              <button className="btn btn-primary">Hier Me</button>
+
+              <div className="row mt-5">
+                <div className="col-lg-4 mt-5">
+                  <h4>narrn ,ofdnnv</h4>
+                  <p>loifjfbh jhsd gfhkjsgd jgdshfgdfs </p>
+                </div>
+                <div className="col-lg-4 mt-5">
+                  <h4>narrn ,ofdnnv</h4>
+                  <p>loifjfbh jhsd gfhkjsgd jgdshfgdfs </p>
+                </div>
+                <div className="col-lg-4 mt-5">
+                  <h4>narrn ,ofdnnv</h4>
+                  <p>loifjfbh jhsd gfhkjsgd jgdshfgdfs </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <img
+              src="image/n.jpg"
+              alt="Italian Trulli"
+              className="img-fluid float-end header-img rounded"
+            />
+          </div>
         </div>
-        <div></div>
-      </div>
-      <div className="flex">
-        2
-        <h1>
-          lorem isdjhdjkhkdsfkj sdkjfhksjdhaf;kjsdf sdjkhf;gkjhfdsk;gkjhfdsk
-          gdfskjhg;fdsjgh;fdkjghdfj;kghfd
-          fgdlkgj;ldfshgjkhsfsdh;fkjhsdkjfkhg;ljkdfh;gjh;fkdjhg;ldfshgjkhsfsdhfdsgh;dfjlkhj;lkjhgdf;kjhgkjdfhjklhfd;lkjhgdfgfdmnhbglkjfdhskjghd
-          dfkghkjdfh;kjsdhfg;khdflkgjh;dkfjhgfldjh'gdfskjhgkjadfhlkgjahfd
-          fdsgdkfljhglkjdfhjk
-        </h1>
-        <h1>
-          lorem isdjhdjkhkdsfkj sdkjfhksjdhaf;kjsdf sdjkhf;gkjhfdsk;gkjhfdsk
-          gdfskjhg;fdsjgh;fdkjghdfj;kghfd
-          fgdlkgj;ldfshgjkhsfsdh;fkjhsdkjfkhg;ljkdfh;gjh;fkdjhg;ldfshgjkhsfsdhfdsgh;dfjlkhj;lkjhgdf;kjhgkjdfhjklhfd;lkjhgdfgfdmnhbglkjfdhskjghd
-          dfkghkjdfh;kjsdhfg;khdflkgjh;dkfjhgfldjh'gdfskjhgkjadfhlkgjahfd
-          fdsgdkfljhglkjdfhjk
-        </h1>
-        <h1>
-          lorem isdjhdjkhkdsfkj sdkjfhksjdhaf;kjsdf sdjkhf;gkjhfdsk;gkjhfdsk
-          gdfskjhg;fdsjgh;fdkjghdfj;kghfd
-          fgdlkgj;ldfshgjkhsfsdh;fkjhsdkjfkhg;ljkdfh;gjh;fkdjhg;ldfshgjkhsfsdhfdsgh;dfjlkhj;lkjhgdf;kjhgkjdfhjklhfd;lkjhgdfgfdmnhbglkjfdhskjghd
-          dfkghkjdfh;kjsdhfg;khdflkgjh;dkfjhgfldjh'gdfskjhgkjadfhlkgjahfd
-          fdsgdkfljhglkjdfhjk
-        </h1>
-        <h1>
-          lorem isdjhdjkhkdsfkj sdkjfhksjdhaf;kjsdf sdjkhf;gkjhfdsk;gkjhfdsk
-          gdfskjhg;fdsjgh;fdkjghdfj;kghfd
-          fgdlkgj;ldfshgjkhsfsdh;fkjhsdkjfkhg;ljkdfh;gjh;fkdjhg;ldfshgjkhsfsdhfdsgh;dfjlkhj;lkjhgdf;kjhgkjdfhjklhfd;lkjhgdfgfdmnhbglkjfdhskjghd
-          dfkghkjdfh;kjsdhfg;khdflkgjh;dkfjhgfldjh'gdfskjhgkjadfhlkgjahfd
-          fdsgdkfljhglkjdfhjk
-        </h1>
-        <h1>
-          lorem isdjhdjkhkdsfkj sdkjfhksjdhaf;kjsdf sdjkhf;gkjhfdsk;gkjhfdsk
-          gdfskjhg;fdsjgh;fdkjghdfj;kghfd
-          fgdlkgj;ldfshgjkhsfsdh;fkjhsdkjfkhg;ljkdfh;gjh;fkdjhg;ldfshgjkhsfsdhfdsgh;dfjlkhj;lkjhgdf;kjhgkjdfhjklhfd;lkjhgdfgfdmnhbglkjfdhskjghd
-          dfkghkjdfh;kjsdhfg;khdflkgjh;dkfjhgfldjh'gdfskjhgkjadfhlkgjahfd
-          fdsgdkfljhglkjdfhjk
-        </h1>
-        <h1>
-          lorem isdjhdjkhkdsfkj sdkjfhksjdhaf;kjsdf sdjkhf;gkjhfdsk;gkjhfdsk
-          gdfskjhg;fdsjgh;fdkjghdfj;kghfd
-          fgdlkgj;ldfshgjkhsfsdh;fkjhsdkjfkhg;ljkdfh;gjh;fkdjhg;ldfshgjkhsfsdhfdsgh;dfjlkhj;lkjhgdf;kjhgkjdfhjklhfd;lkjhgdfgfdmnhbglkjfdhskjghd
-          dfkghkjdfh;kjsdhfg;khdflkgjh;dkfjhgfldjh'gdfskjhgkjadfhlkgjahfd
-          fdsgdkfljhglkjdfhjk
-        </h1>
       </div>
     </>
   );
