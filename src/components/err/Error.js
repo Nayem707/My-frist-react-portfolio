@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Error = () => {
   return (
-    <div>Error page, 404 not found </div>
-  )
-}
+    <div className='text-center pt-5'>
+      <h2>Error page, 404 not found</h2>{' '}
+    </div>
+  );
+};
 
-export default Error
+export default Error;

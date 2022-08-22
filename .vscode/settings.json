@@ -1,0 +1,27 @@
+{
+  "files.autoSave": "off",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.linkedEditing": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
+  //   "editor.fontFamily": "Fira Code, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "workbench.editor.untitled.hint": "hidden",
+  // "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  // "bracketPairColorizer.depreciation-notice": false,
+  "editor.inlineSuggest.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.enabled": false
+}
