@@ -1,53 +1,50 @@
 {
+  "version": "0.2.0",
   "configurations": [
     {
-      "name": "Docker Node.js Launch",
-      "type": "docker",
+      "name": "Debug SST",
+      "type": "node",
       "request": "launch",
-      "preLaunchTask": "docker-run: debug",
-      "platform": "node"
-    },
-    {
-      "type": "pwa-msedge",
-      "name": "Launch Microsoft Edge",
-      "request": "launch",
-      "runtimeArgs": ["--remote-debugging-port=9222"],
-      "url": "c:\\Users\\Administrator\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.0\\out\\startpage\\index.html", // Provide your project's url to finish configuring
-      "presentation": {
-        "hidden": true
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/sst",
+      "runtimeArgs": ["dev", "--increase-timeout"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      // sourceMapRenames helps with the loading spinner when debugging and viewing local variables
+      "sourceMapRenames": false,
+      "env": {
+        "AWS_PROFILE": "flo-ct-flo360"
       }
     },
     {
-      "type": "pwa-msedge",
-      "name": "Launch Microsoft Edge in headless mode",
+      "name": "Debug Tests - Unit",
+      "type": "node",
       "request": "launch",
-      "runtimeArgs": ["--headless", "--remote-debugging-port=9222"],
-      "url": "c:\\Users\\Administrator\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.0\\out\\startpage\\index.html", // Provide your project's url to finish configuring
-      "presentation": {
-        "hidden": true
-      }
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/sst",
+      "runtimeArgs": ["bind", "yarn", "\"jest\"", "\"--watch\"", "\"--config\"", "\"./jest.unit.config.cjs\"", "\"${input:scopeTestsFileName}\""],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "AWS_PROFILE": "flo-ct-flo360"
+      },
     },
     {
-      "type": "vscode-edge-devtools.debug",
-      "name": "Open Edge DevTools",
-      "request": "attach",
-      "url": "c:\\Users\\Administrator\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.0\\out\\startpage\\index.html", // Provide your project's url to finish configuring
-      "presentation": {
-        "hidden": true
-      }
-    }
+      "name": "Debug Tests - E2E",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/sst",
+      "runtimeArgs": ["bind", "yarn", "\"vitest\"", "\"--config\"", "\"./vitest.e2e.config.ts\"", "\"${input:scopeTestsFileName}\""],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "AWS_PROFILE": "flo-ct-flo360"
+      },
+    },
   ],
-  "compounds": [
+  "inputs": [
     {
-      "name": "Launch Edge Headless and attach DevTools",
-      "configurations": [
-        "Launch Microsoft Edge in headless mode",
-        "Open Edge DevTools"
-      ]
-    },
-    {
-      "name": "Launch Edge and attach DevTools",
-      "configurations": ["Launch Microsoft Edge", "Open Edge DevTools"]
+      "id": "scopeTestsFileName",
+      "type": "promptString",
+      "description": "Partial file name to scope test debugging to. ex. arena. Leave blank to run all tests.",
     }
   ]
 }
