@@ -1,27 +1,23 @@
 {
-  "files.autoSave": "off",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+  "search.exclude": {
+    "**/.sst": true
   },
-  "prettier.jsxSingleQuote": true,
-  "prettier.semi": true,
-  "prettier.singleQuote": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.wordWrap": "on",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.linkedEditing": true,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
-  //   "editor.fontFamily": "Fira Code, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.tabSize": 2,
-  "workbench.editor.untitled.hint": "hidden",
-  // "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
-  // "bracketPairColorizer.depreciation-notice": false,
-  "editor.inlineSuggest.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.minimap.enabled": false
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
