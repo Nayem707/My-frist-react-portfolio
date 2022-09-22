@@ -11,7 +11,7 @@ import { Link, outline } from 'react-router-dom';
 
 function NavbarHome() {
   return (
-    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark' fixed='top'>
       <Container>
         <Navbar.Brand href='/' className='m-0'>
           NAYEM ISLAM
@@ -43,7 +43,7 @@ function NavbarHome() {
               <FaGithub className='text-white' size='30px'></FaGithub>
             </Nav.Link>
 
-            <Nav.Link href='https://github.com/Nayem707'>
+            <Nav.Link href='https://web.facebook.com'>
               <FaFacebook className='text-white' size='30px'></FaFacebook>
             </Nav.Link>
 

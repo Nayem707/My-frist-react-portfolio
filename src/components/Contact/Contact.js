@@ -1,21 +1,35 @@
 import React from 'react';
+import {
+  FaEnvelope,
+  FaHome,
+  FaMapMarkerAlt,
+  FaMobileAlt,
+} from 'react-icons/fa';
 
 const Contact = () => {
   return (
     <section>
-      <div id='contact' className='container-fluid mb-5 mt-5'>
-        <h1 className='text-center m-5 mb-4'>Contact</h1>
-        <div className='row'>
-          <div className='col-sm-5 mt-0 p-5'>
+      <div className='container-fluid mb-5 mt-5'>
+        <div className='row justify-content-center'>
+          <div className='col-sm-5 mt-5'>
             <h4>
               <strong>We'll get back to you within 24 hours.</strong>
             </h4>
-            <p>Krishnapur-2461, Khaliajuri, Netrakona, BD.</p>
-            <p>+880 1777-941513</p>
-            <p>inaeem707@gmail.com</p>
+            <p>
+              <FaHome /> Krishnapur-2461, Khaliajuri, Netrakona, Bangladesh.
+              <FaMapMarkerAlt />
+            </p>
+            <p>
+              <FaMobileAlt /> +880 1777-941513
+            </p>
+            <p>
+              <FaEnvelope /> inaeem707@gmail.com
+            </p>
           </div>
-          <div className='col-sm-6'>
+
+          <div className='col-sm-6 mt-5'>
             <div className='row'>
+              <h1 className='text-center'>Contact</h1>
               <div className='col-sm-6 form-group'>
                 <input
                   className='form-control'
@@ -23,8 +37,7 @@ const Contact = () => {
                   name='name'
                   placeholder='Name'
                   type='name'
-                  required
-                ></input>
+                  required></input>
               </div>
 
               <div className='col-sm-6 form-group'>
@@ -34,8 +47,7 @@ const Contact = () => {
                   name='email'
                   placeholder='Email'
                   type='email'
-                  required
-                ></input>
+                  required></input>
               </div>
             </div>
             <br></br>
@@ -44,15 +56,13 @@ const Contact = () => {
               id='comments'
               name='comments'
               placeholder='Comment'
-              rows='5'
-            ></textarea>
+              rows='5'></textarea>
             <br></br>
             <div className='row'>
               <div className='col-sm-12 form-group'>
                 <button
                   className='btn btn-outline-info text-dark pull-center'
-                  type='submit'
-                >
+                  type='submit'>
                   Send
                 </button>
               </div>

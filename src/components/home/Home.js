@@ -3,30 +3,38 @@ import React from 'react';
 import './home.css';
 import { Form, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import {
+  FaJsSquare,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+  FaChalkboardTeacher,
+} from 'react-icons/fa';
 
 const Home = () => {
   return (
     <>
       <section>
-        <div className='container-fluid bg-info m-0 p-0'>
+        <div className='container-fluid bg-info mt-5 pt-3'>
           <marquee
-            className='text-dark mt-1'
+            className='text-dark  mt-2'
             width='100%'
             direction='left'
-            height='100%'
-          >
-            <h5>Wellcome! To My React Portfolio</h5>
+            height='100%'>
+            <h4>
+              Wellcome! to my React Portfolio. Creacte react js with bootstrap.{' '}
+            </h4>
           </marquee>
         </div>
         <div className='container-fluid  text-center '>
           <div className='row'>
             <div className='col-lg-7 bg-default '>
               <div className='m-lg-5 pt-lg-2 '>
-                <h1 className='text-dark pt-lg-2'>HI! I AM NAYEM ISLAM </h1>
-                <h5 className='text-info'>Web Development And Designer</h5>
+                <h1 className='text-dark pt-lg-6'>আমি মো: নাঈম ইসলাম </h1>
+                <h4 className='text-info'>Web Development And Designer</h4>
                 <p className='text-dark'>
-                  lorem ipesom doller lorem ipesom doller lorem ipesom doller
-                  lorem ipesom doller lorem ipesom doller lorem ipesom doller
+                  আমি একজন দক্ষ ওয়েব ডেবেলপার হিসেবে গড়ে উঠতে চাই। আমার লক্ষ্য
+                  আগামীর বাংলাদেশকে ডিজিটালাইজ করতে সহায়তা করা।
                 </p>
                 <button className='btn btn-outline-info text-dark'>
                   Hier Me
@@ -36,15 +44,15 @@ const Home = () => {
                 </button>
                 <div className='row mt-5 '>
                   <div className='col-lg-5  border rounded bg-dark'>
-                    <h3 className='m-1 text-warning mt-3'>48+</h3>
+                    <h4 className='m-1 text-warning mt-3'>48+</h4>
                     <p className='text-light'>Projet </p>
                   </div>
                   <div className='col-lg-4  border'>
-                    <h3 className='m-1 text-dark mt-3'>18+</h3>
+                    <h4 className='m-1 text-dark mt-3'>18+</h4>
                     <p className='text-dark'>Client </p>
                   </div>
                   <div className='col-lg-3  border rounded bg-dark'>
-                    <h3 className='m-1 text-warning mt-3'>20+</h3>
+                    <h4 className='m-1 text-warning mt-3'>20+</h4>
                     <p className='text-light'>Customer </p>
                   </div>
                 </div>
@@ -64,28 +72,28 @@ const Home = () => {
 
       {/* Service */}
       <section>
-        <div className='container-fluid bg-info mt-1'>
+        <div className='container-fluid bg-info'>
           <div className='row'>
-            <div className='text-center pt-5 p-5'>
-              <h1 className='text-light'>Service</h1>
-              <p className=''>
+            <div className='text-center p-5'>
+              <h1 className='text-bolder'>Service</h1>
+              <p className='text-light'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
                 harum, exercitationem eos ab neque veritatis quibusdam quaerat
                 veniam cupiditate temporibus dolore blanditiis labore ipsa nisi
                 eius officiis repellendus architecto culpa.
               </p>
-              <button className='btn btn-outline-light text-default'>
-                View Details
-              </button>
+              <button className='btn btn-dark text-light'>View Details</button>
             </div>
 
-            <div className='mb-5'>
+            <div className='mb-5 p-5 pt-0'>
               <div className='row d-flex justify-content-center align-items-center'>
-                <div className='col-lg-5 text-center '>
-                  <div className='card text-bg-ligth border-dark m-3'>
-                    <div className='card-header'>Header</div>
+                <div className='col-lg-4 text-center '>
+                  <div className='card text-bg-dark border-light'>
+                    <div className='card-header'>
+                      <FaChalkboardTeacher size={40} />
+                    </div>
                     <div className='card-body'>
-                      <h5 className='card-title'>Primary card title</h5>
+                      <h4 className='card-title'>Code Edit</h4>
                       <p className='card-text'>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -93,11 +101,13 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className='col-lg-5 text-center '>
-                  <div className='card text-bg-dark border-light m-3'>
-                    <div className='card-header'>Header</div>
+                <div className='col-lg-4 text-center '>
+                  <div className='card border-dark m-1'>
+                    <div className='card-header'>
+                      <FaHtml5 size={40} />
+                    </div>
                     <div className='card-body'>
-                      <h5 className='card-title'>Primary card title</h5>
+                      <h4 className='card-title'>HTML-5</h4>
                       <p className='card-text'>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -105,11 +115,13 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className='col-lg-5 text-center '>
-                  <div className='card text-bg-ligth border-dark m-3'>
-                    <div className='card-header'>Header</div>
+                <div className='col-lg-4 text-center '>
+                  <div className='card text-bg-dark border-light border-dark'>
+                    <div className='card-header'>
+                      <FaJsSquare size={40} />
+                    </div>
                     <div className='card-body'>
-                      <h5 className='card-title'>Primary card title</h5>
+                      <h4 className='card-title'>Java Script</h4>
                       <p className='card-text'>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -117,11 +129,27 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className='col-lg-5 text-center '>
-                  <div className='card text-bg-ligth border-dark m-3'>
-                    <div className='card-header'>Header</div>
+                <div className='col-lg-4 text-center '>
+                  <div className='card border-dark m-1'>
+                    <div className='card-header'>
+                      <FaReact size={40} />
+                    </div>
                     <div className='card-body'>
-                      <h5 className='card-title'>Primary card title</h5>
+                      <h4 className='card-title'> React JS</h4>
+                      <p className='card-text'>
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-lg-4 text-center '>
+                  <div className='card text-bg-ligth border-dark m-1'>
+                    <div className='card-header'>
+                      <FaNodeJs size={40} />
+                    </div>
+                    <div className='card-body'>
+                      <h4 className='card-title'> Node JS</h4>
                       <p className='card-text'>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
@@ -162,7 +190,7 @@ const Home = () => {
                     <div className='card text-bg-ligth border-dark m-2'>
                       <div className='card-header'>Header</div>
                       <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
+                        <h4 className='card-title'>Primary card title</h4>
                         <p className='card-text'>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.
@@ -174,7 +202,7 @@ const Home = () => {
                     <div className='card text-bg-dark border-light m-2'>
                       <div className='card-header'>Header</div>
                       <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
+                        <h4 className='card-title'>Primary card title</h4>
                         <p className='card-text'>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.
@@ -186,7 +214,19 @@ const Home = () => {
                     <div className='card text-bg-dark border-light m-2'>
                       <div className='card-header'>Header</div>
                       <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
+                        <h4 className='card-title'>Primary card title</h4>
+                        <p className='card-text'>
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-lg-3 text-center '>
+                    <div className='card text-bg-ligth border-light m-2'>
+                      <div className='card-header'>Header</div>
+                      <div className='card-body'>
+                        <h4 className='card-title'>Primary card title</h4>
                         <p className='card-text'>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.
@@ -198,7 +238,7 @@ const Home = () => {
                     <div className='card text-bg-dark border-light m-2'>
                       <div className='card-header'>Header</div>
                       <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
+                        <h4 className='card-title'>Primary card title</h4>
                         <p className='card-text'>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.
@@ -207,10 +247,10 @@ const Home = () => {
                     </div>
                   </div>
                   <div className='col-lg-3 text-center '>
-                    <div className='card text-bg-dark border-light m-2'>
+                    <div className='card text-bg-ligth border-light m-2'>
                       <div className='card-header'>Header</div>
                       <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
+                        <h4 className='card-title'>Primary card title</h4>
                         <p className='card-text'>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.
@@ -219,22 +259,10 @@ const Home = () => {
                     </div>
                   </div>
                   <div className='col-lg-3 text-center '>
-                    <div className='card text-bg-dark border-light m-2'>
+                    <div className='card text-bg-dark border-dark m-2'>
                       <div className='card-header'>Header</div>
                       <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
-                        <p className='card-text'>
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='col-lg-3 text-center '>
-                    <div className='card text-bg-ligth border-dark m-2'>
-                      <div className='card-header'>Header</div>
-                      <div className='card-body'>
-                        <h5 className='card-title'>Primary card title</h5>
+                        <h4 className='card-title'>Primary card title</h4>
                         <p className='card-text'>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.
@@ -253,7 +281,7 @@ const Home = () => {
       <section>
         <div className='container-fluid bg-dark '>
           <div className='row'>
-            <div className='position-relative'>
+            <div className='col-lg-6'>
               <h1 className='text-light text-center mt-4'>Subscribe</h1>
               <p className='text-light text-center'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -263,8 +291,8 @@ const Home = () => {
               </p>
             </div>
 
-            <div className='position-relative'>
-              <Form className=' d-flex p-lg-5 mb-5'>
+            <div className='col-lg-6 '>
+              <Form className='d-flex mt-5 p-4'>
                 <Form.Control
                   type='search'
                   placeholder='E-mail'
@@ -278,74 +306,215 @@ const Home = () => {
         </div>
       </section>
 
+      {/* coursole */}
       <section>
-        <div className='container-fluid bg-secondary '>
-          <div className='row justify-content-center'>
-            <div className='col-lg-12'>
-              <div className='p-5'>
-                <h1 className='text-light text-center'>Our Client</h1>
-                <p className='text-center text-info'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-lg-12 p-5'>
+              <div className=''>
+                <h1 className='text-center'>Our Client</h1>
+                <p className='text-center'>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Aliquam non, sed sequi magni autem mollitia odit maiores
                   eligendi omnis velit deserunt iste quaerat ab nostrum quia
-                  labore excepturi, illum tempore!
+                  labore excepturi, illum tempore! Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Aliquam non, sed sequi magni
+                  autem mollitia odit maiores eligendi omnis velit deserunt iste
+                  quaerat ab nostrum quia labore excepturi, illum tempore!
                 </p>
-                <Carousel>
-                  <Carousel.Item>
-                    <div className='row justify-content-center'>
-                      <div className='col-lg-4 text-center bg-info rounded'>
-                        <img
-                          className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
-                          src='image/n1.png'
-                          alt='Third slide'
-                        />
-                        <h1 className='card-title text-light'>Nayem Islam</h1>
-                        <h5>Senior Web Devloper</h5>
-                        <p className='card-text m-2'>
-                          "Some quick example text to build on the card title
-                          and make up the bulk of the card's content".
-                        </p>
-                        <h5>Contact</h5>
+                <div className=''>
+                  <Carousel>
+                    <Carousel.Item>
+                      <div className='row'>
+                        <div className='col-lg-12 d-flex'>
+                          <div className=' justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                          <div className='justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                          <div className='justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <div className='row justify-content-center'>
-                      <div className='col-lg-4 text-center bg-info rounded'>
-                        <img
-                          className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
-                          src='image/n2.png'
-                          alt='Third slide'
-                        />
-                        <h1 className='card-title text-light'>Nayem Islam</h1>
-                        <h5>Senior Web Devloper</h5>
-                        <p className='card-text m-2 text-light'>
-                          "Some quick example text to build on the card title
-                          and make up the bulk of the card's content".
-                        </p>
-                        <h5>Contact</h5>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className='row'>
+                        <div className='col-lg-12 d-flex'>
+                          <div className=' justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                          <div className='justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                          <div className='justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <div className='row justify-content-center'>
-                      <div className='col-lg-4 text-center bg-info rounded'>
-                        <img
-                          className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
-                          src='image/n.png'
-                          alt='Third slide'
-                        />
-                        <h1 className='card-title text-light'>Nayem Islam</h1>
-                        <h5>Senior Web Devloper</h5>
-                        <p className='card-text m-2'>
-                          "Some quick example text to build on the card title
-                          and make up the bulk of the card's content".
-                        </p>
-                        <h5>Contact</h5>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className='row'>
+                        <div className='col-lg-12 d-flex'>
+                          <div className=' justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                          <div className='justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                          <div className='justify-content-center'>
+                            <div className='m-2 text-center bg-info rounded'>
+                              <img
+                                className='w-50 img-fluid rounded img-thumbnail rounded-circle mt-2'
+                                src='image/n1.png'
+                                alt='Third slide'
+                              />
+                              <h1 className='card-title text-light'>
+                                Nayem Islam
+                              </h1>
+                              <h4>Senior Web Developer</h4>
+                              <p className='card-text m-2'>
+                                "Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content".
+                              </p>
+                              <h4>Contact</h4>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </Carousel.Item>
-                </Carousel>
+                    </Carousel.Item>
+                  </Carousel>
+                </div>
               </div>
             </div>
           </div>
